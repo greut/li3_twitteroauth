@@ -5,7 +5,7 @@ use lithium\core\libraries;
 if (!defined('TWITTEROAUTH_LIBRARY_PATH')) {
 	define(
 		'TWITTEROAUTH_LIBRARY_PATH',
-		LITHIUM_LIBRARY_PATH . '/twitteroauth'
+		LITHIUM_LIBRARY_PATH . '/twitteroauth/twitteroauth'
 	);
 }
 
