@@ -2,7 +2,7 @@
 
 ## Description
 
-This plugin integrates the abraham's twitteroauth library to lithium, see the readme.wiki file for a proper documentation.
+This plugin integrates the Abraham's TwitterOAuth library to Lithium (Li3).
 
 ## Dependencies
 
@@ -62,7 +62,7 @@ $twitter = TwitterOAuth::get('default');
 
 ## More documentation
 
-Everything else should be part of @abraham's library. Find its documentation [on github](https://github.com/abraham/twitteroauth/blob/master/DOCUMENTATION).
+Everything else should be part of @abraham's library. Find its documentation [here](https://twitteroauth.com).
 
 ## Notes
 
