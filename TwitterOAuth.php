@@ -1,12 +1,11 @@
 <?php
 
 namespace li3_twitteroauth;
-use TwitterOAuth;
 
-class TwitterApps extends \lithium\core\Adaptable
+class TwitterOAuth extends \lithium\core\Adaptable
 {
 	/**
-	 * A Collection of the configurations you add through TwitterApps::config().
+	 * A Collection of the configurations you add through TwitterOAuth::config().
 	 *
 	 * @var Collection
 	 */
@@ -14,12 +13,13 @@ class TwitterApps extends \lithium\core\Adaptable
 
 	public static function get($name) {
 		$config = static::config($name);
+
 		return (!isset($config['oauth_token'])) ?
-			new TwitterOAuth(
+			new \Abraham\TwitterOAuth\TwitterOAuth(
 				$config['consumer_key'],
 				$config['consumer_secret']
 			) :
-			new TwitterOAuth(
+			new \Abraham\TwitterOAuth\TwitterOAuth(
 				$config['consumer_key'],
 				$config['consumer_secret'],
 				$config['oauth_token'],
