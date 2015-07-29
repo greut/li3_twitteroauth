@@ -22,7 +22,7 @@ This library requires https://github.com/abraham/twitteroauth
 
 ## Configuration
 
-1. Configure your queues in `app/config/bootstrap/twitteroauth.php`:
+1. Configure TwitterOAuth in `app/config/bootstrap/twitteroauth.php`:
 
     ```php
 	use li3_twitteroauth\TwitterOAuth;
@@ -44,7 +44,7 @@ This library requires https://github.com/abraham/twitteroauth
     require __DIR__ . '/bootstrap/twitteroauth.php';
     ```
 
-4. You can now use your configured queues in your application:
+4. You can now use TwitterOAuth in your application:
 
     ```php
     use li3_twitteroauth\TwitterOAuth;
